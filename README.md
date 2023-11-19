@@ -36,5 +36,4 @@ Based on the open-source software OpenSees and Python, a hybrid design method fo
 
 >优化结束后，对train_value.txt中obj_fun列的数据进行排序，取obj_fun最小的10组数据代入OpenSees模型计算进行对比验证。步骤如下：将tA4500，tA4501，tA4600和tA4601四个数据替换掉OpenSees original model/RCF_4_3.tcl文件中相应位置，运行OpenSees original model/T_4_3.tcl文件，会生成OpenSees original model/Disp_RCF_4_3.txt文件，Disp_RCF_4_3.txt文件第一列表示加载时间，第二列表示拆除中柱后剩余节点的位移，取Disp_RCF_4_3.txt文件第二列数据中绝对值最大的数，判断是否大于1200mm。最终，最优配筋设计方案是OpenSees模型计算结果不大于1200mm中obj_fun最小的设计方案。
 
-
- 
+:bulb:注意具体步骤详细示意图见Description file.docx文件
